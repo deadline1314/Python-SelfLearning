@@ -5,7 +5,7 @@ style.use('ggplot')
 
 
 class support_vector_machine:
-    def __index__(self, visualization=True):
+    def __init__(self, visualization=True):
         self.visualization = visualization
         self.colors = {1: 'r', -1: 'b'}
         if self.visualization:
