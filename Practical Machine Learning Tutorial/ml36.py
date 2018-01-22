@@ -41,6 +41,8 @@ def handle_non_numerical_data(df):
 df = handle_non_numerical_data(df)
 # print(df.head())
 
+df.drop(['boat'], 1, inplace=True)
+
 X = np.array(df.drop(['survived'], 1).astype(float))
 
 X = preprocessing.scale(X)
